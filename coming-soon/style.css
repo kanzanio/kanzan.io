@@ -167,7 +167,7 @@ label .comment {
   font-size: 0.8em;
 }
 
-input[type='text'] {
+input[type='email'] {
   font-size:0.9em;
   font-family: monospace;
   color: #444;

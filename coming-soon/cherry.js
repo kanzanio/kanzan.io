@@ -1,7 +1,7 @@
 // deal with pesky bots
 var form = document.querySelector("#register");
 form.onsubmit = function(){
-  var trap = document.querySelectorAll(".url")[0];
+  var trap = document.querySelectorAll(".name")[0];
   if (trap.value.length) {
     document.location.href = document.querySelectorAll(".redirect")[0].value;
     return false;
