@@ -9,7 +9,7 @@
     "prebuild": "npm run clean -s",
     "build": "cp -r src/ dist/",
     "predeploy": "npm run build",
-    "deploy": "git subtree push --prefix dist origin gh-pages"
+    "deploy": "(cd .. && git subtree push --prefix coming-soon/dist origin gh-pages)"
   },
   "devDependencies": {
     "rimraf": "^2.2.8"
