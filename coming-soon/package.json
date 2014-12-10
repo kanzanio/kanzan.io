@@ -8,7 +8,7 @@
     "clean": "rimraf dist/*",
     "prebuild": "npm run clean -s",
     "build": "cp -r src/ dist/",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && git add dist && git commit -m'deployment to gh-pages'",
     "deploy": "(cd .. && git subtree push --prefix coming-soon/dist origin gh-pages)"
   },
   "devDependencies": {
