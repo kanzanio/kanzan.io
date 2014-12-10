@@ -1,4 +1,4 @@
 kanzan.io
 =========
 
-The kanzan.io site
+The website and service for Kanzan CMS (http://kanzan.io)
