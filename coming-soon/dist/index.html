@@ -1,0 +1,148 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>Kanzan CMS</title>
+    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="prism.css" media="screen" charset="utf-8">
+    <meta name="description" content="A CMS for developers, designers and authors" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+  <body>
+
+    <div class="section-intro">
+      <div class="container">
+        <h1>Kanzan</h1>
+        <div>
+          <p>
+            A CMS for developers who care about their code and performance in the browser, and for content managers who crave simplicity.
+          </p>
+        </div>
+        <a href="#register" class="btn-register">Register for early beta access</a>
+
+        <div class="editor">
+          <div class="editor-title">terminal</div>
+          <div class="editor-text"><pre><code class="language-bash"># coming to npm soon!
+$ npm install kanzan -g</code></pre></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section-how">
+      <div class="container">
+        <h2>How does it work?</h2>
+        <div>
+          <p>
+            Kanzan lets you focus on developing valid HTML templates first, and then define areas of content to be managed.
+          </p>
+          <p>
+            It generates and hosts an admin console for content managers to control just those areas of dynamic content, and outputs markup as the developer intended, free from code smells and populated with the latest content.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-workflow">
+      <div class="container">
+        <h2>It fits with your workflow</h2>
+        <div>
+          <p>
+            As web developers, we've spent a lot of time designing our workflows. Kanzan is designed to fit into those workflows rather than replace them.
+          </p>
+          <img src="./images/workflows.png" class="image-worflow" alt="Front end development workflows" />
+          <p>
+            You can add Kanzan to the process you already use. It's perfect for enabling content management in sites built with tools like Jekyll, Middleman, Metalsmith or Harp, and hosted on static servers.
+          <p>
+          </p>
+            Manageable content areas are defined using valid HTML attributes so that your templates need no extra steps to be viewable in a browser.
+          </p>
+
+          <div class="editor">
+            <div class="editor-title">your-template.html</div>
+            <div class="editor-text">
+<pre><code class="language-markup">&lt;h1 data-kanzan-name=&quot;page-header&quot;
+     data-kanzan-type=&quot;text&quot;&gt;
+  Some page heading
+&lt;/h1&gt;
+
+&lt;div data-kanzan-name=&quot;strapline&quot;
+     data-kanzan-type=&quot;markdown&quot;
+     data-kanzan-label=&quot;the page strapline&quot;
+     data-kanzan-help=&quot;some guidance for the editor&quot;&gt;
+  the strapline for the page
+&lt;/div&gt;
+</code></pre>   
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="section-create">
+      <div class="container">
+        <h2>Your markup defines your CMS</h2>
+        <div>
+          <p>
+            Pushing your site to Kanzan generates a custom, hosted CMS. No need to add more complex hosting infrastructure.
+          </p>
+          <p>
+           Content is managed on Kanzan which outputs a deployable site to your existing hosting provider.
+         </p>
+        </div>
+
+        <div class="editor">
+          <div class="editor-title">Kanzan.io - your CMS</div>
+          <img src="./images/cms-3.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="section-publish">
+      <div class="container">
+        <h2>Publish to your existing hosting</h2>
+        <div>
+          <p>
+            Content authors can publish changes directly from Kanzan. A new version of the site is output and pushed to your hosting server.
+          </p>
+          <p>
+            At launch we will support outputting the site by pushing to a git remote. Perfect for using with free Github Pages hosting or other git-enable static hosting providers
+          </p>
+        </div>
+         <img src="./images/hosts.png" class="image-publish" alt="Output to many static hosting providers" />
+      </div>
+    </div>
+
+    <div class="section-register">
+      <div class="container">
+        <form action="http://pooleapp.com/stash/7926c132-e649-4ee9-833b-aeeb5ba42011/" method="post" id="register">
+          <h3>
+            Register for news &amp; beta access
+          </h3>
+          <p>
+            We're working on our first public release, but you can register for announcements and early access to the beta.
+          </p>
+          <div class="lobsterpot">
+            <input type="text" name="name" class="name" value="">
+          </div>
+          <input type="hidden" name="redirect_to" class="redirect" value="/coming-soon" />
+          <label for="email">Your email <span class="comment">(No spam. We promise)</span></label>
+          <input type="email" name="email" class="email" placeholder="you@youremail">
+          <input type="submit" value="Keep me in the loop" class="submit" />
+        </form>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <p>
+          Kanzan. A content management system for developers, designers and authors.
+        </p>
+      </div>
+    </div>
+    <script src="./prism.js"></script>
+    <script src="./cherry.js" charset="utf-8"></script>
+  </body>
+</html>
