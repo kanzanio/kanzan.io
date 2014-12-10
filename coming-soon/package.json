@@ -5,18 +5,13 @@
   "author": "Weave",
   "license": "ISC",
   "scripts": {
-    "clean": "rimraf dist/js/*",
+    "clean": "rimraf dist/*",
     "prebuild": "npm run clean -s",
-    "build": "npm run build:scripts && npm run build:jekyll",
-    "prebuild:scripts": "jshint src/js/**.js",
-    "build:scripts": "browserify src/js/mine.js | uglifyjs > jekyll-site/js/build.min.js",
-
+    "build": "cp -r src/ dist/",
+    "predeploy": "npm run build",
     "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "devDependencies": {
-    "browserify": "^7.0.0",
-    "jshint": "^2.5.10",
-    "rimraf": "^2.2.8",
-    "uglify-js": "^2.4.16",
+    "rimraf": "^2.2.8"
   }
 }
