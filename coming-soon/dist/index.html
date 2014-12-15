@@ -59,23 +59,37 @@ $ npm install kanzan -g</code></pre></div>
           </p>
 
           <div class="editor">
-            <div class="editor-title">your-template.html</div>
+            <div class="editor-title">src/index.html</div>
             <div class="editor-text">
 <pre><code class="language-markup">&lt;h1 data-kanzan-name=&quot;page-header&quot;
      data-kanzan-type=&quot;text&quot;&gt;
   Some page heading
 &lt;/h1&gt;
-
-&lt;div data-kanzan-name=&quot;strapline&quot;
+&lt;p class=&quot;strap&quot; data-kanzan-name=&quot;strapline&quot;
      data-kanzan-type=&quot;markdown&quot;
      data-kanzan-label=&quot;the page strapline&quot;
      data-kanzan-help=&quot;some guidance for the editor&quot;&gt;
   the strapline for the page
-&lt;/div&gt;
+&lt;/p&gt;
 </code></pre>   
               </div>
             </div>
           </div>
+
+          <p>Kanzan cleans up after itself to leave no code smells in your HTML.</p>
+
+          <div class="editor">
+            <div class="editor-title">dist/index.html</div>
+            <div class="editor-text">
+<pre><code class="language-markup">&lt;h1&gt;The page heading you edited&lt;/h1&gt;
+&lt;p class=&quot;strap&quot;&gt;
+  the strapline for the page from your Kanzan CMS
+&lt;/p&gt;
+</code></pre>   
+              </div>
+            </div>
+          </div>
+
 
         </div>
       </div>
