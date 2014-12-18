@@ -287,6 +287,15 @@ input[type='submit'] {
 }
 
 
+.thanks {
+  display: none;
+}
+
+.thanks:target {
+  display: inherit;
+}
+
+
 @media all and (min-width: 400px) {
 
   body {
